@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Practica cookies 1</title>
+</head>
+<body>
+<form method="post" action="pcookiesB.php">
+	<input type="text" name="user" 
+	<?php
+		if(isset($_COOKIE['usuario']))
+			echo 'value="'.$_COOKIE['usuario'].'"';
+	?> 
+	required> Usuario<br>
+	
+	<input type="text" name="pass" <?php
+		if(isset($_COOKIE['password']))
+			echo 'value="'.$_COOKIE['password'].'"';
+	?> required> Password<br>
+	
+	<input type="submit" name="b_env" value="Entrar">
+</form>
+</body>
+</html>
