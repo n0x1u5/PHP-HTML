@@ -1,2 +1,2 @@
 # PHP-HTML
-For a practices of IAW ASIR
+Practices of IAW ASIR
